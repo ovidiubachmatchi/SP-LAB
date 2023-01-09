@@ -33,4 +33,9 @@ public class ImageProxy implements Element {
     public void get(int e) {
 
     }
+
+    @Override
+    public void Accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 }

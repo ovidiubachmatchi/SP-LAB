@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Section implements Element{
+public class Section implements Element {
     List<Element> elements;
     String title;
 
@@ -31,5 +31,14 @@ public class Section implements Element{
     @Override
     public void get(int e) {
         elements.get(e);
+    }
+
+    public void accept(BookStatistics stats) {
+        stats.visit(this);
+    }
+
+    @Override
+    public void Accept(Visitor visitor) {
+        visitor.visit(this);
     }
 }

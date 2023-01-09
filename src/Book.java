@@ -29,4 +29,9 @@ public class Book extends Section {
     public void addContent(Element e) {
         elements.add(e);
     }
+
+    @Override
+    public void Accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 }
