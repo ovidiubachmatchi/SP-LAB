@@ -10,4 +10,4 @@ https://github.com/ovidiubachmatchi/SP-LAB1/tree/7d01d74fb61216918901e1d5d1246c3
 Nota 10
 
 # Nota finala propusa:
-8
+10
